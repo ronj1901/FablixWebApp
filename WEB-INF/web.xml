@@ -1,0 +1,121 @@
+
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ServletBasics</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.sam.user.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>com.sam.user.Search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StarInfo</servlet-name>
+		<servlet-class>com.sam.user.StarInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StarInfo</servlet-name>
+		<url-pattern>/StarInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MovieInfo</servlet-name>
+		<servlet-class>com.sam.user.MovieInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MovieInfo</servlet-name>
+		<url-pattern>/MovieInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GenreServlet</servlet-name>
+		<servlet-class>com.sam.user.GenreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenreServlet</servlet-name>
+		<url-pattern>/GenreServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TitleServlet</servlet-name>
+		<servlet-class>com.sam.user.TitleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TitleServlet</servlet-name>
+		<url-pattern>/TitleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<servlet-class>com.sam.user.ShoppingCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<url-pattern>/ShoppingCartServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateCartServlet</servlet-name>
+		<servlet-class>com.sam.user.UpdateCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCartServlet</servlet-name>
+		<url-pattern>/UpdateCartServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckOut</servlet-name>
+		<servlet-class>com.sam.user.CheckOut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckOut</servlet-name>
+		<url-pattern>/CheckOut</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+    <servlet-name>Auto</servlet-name>
+    <servlet-class>com.sam.user.AutoComplete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Auto</servlet-name>
+     <url-pattern>/Auto</url-pattern>
+  </servlet-mapping>
+  
+	<servlet>
+		<servlet-name>moviePopUp</servlet-name>
+		<servlet-class>com.sam.user.moviePopUp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>moviePopUp</servlet-name>
+		<url-pattern>/moviePopUp</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- session   -->
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
+
+
+</web-app>
+</element>
